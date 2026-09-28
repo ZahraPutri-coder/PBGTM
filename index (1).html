@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pendaftaran Ekstrakurikuler — SMK Negri Tengaran</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="brand">
+    <div class="brand-logo">
+      <div class="brand-logo">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWVvrpkJngho65OhsEAiUX079DRgWRQ4mkyuOMG4cxng&s=10" alt="Logo SMK Nusantara Teknika">
+      </div>
+    </div>
+    <div class="brand-text">
+      <div class="sekolah">SMK Negri Tengaran</div>
+      <div class="tagline">Unggul, Terampil, Berkarakter</div>
+    </div>
+  </div>
+  <div class="nav-pill">Pendaftaran Ekstrakurikuler</div>
+</nav>
+
+<div class="page-layout">
+  <main>
+    <div class="card">
+      <div class="card-head">
+        <h1>Formulir Pendaftaran Ekstrakurikuler</h1>
+        <p>Lengkapi data di bawah ini dengan benar. Semua kolom bertanda bintang wajib diisi sebelum formulir dapat dikirim.</p>
+      </div>
+
+      <form id="regForm" novalidate>
+        <div class="field" id="field-nama">
+          <label for="nama">Nama Lengkap <span class="req">*</span></label>
+          <input type="text" id="nama" name="nama" placeholder="Tulis nama lengkapmu">
+          <div class="hint err">Nama lengkap tidak boleh kosong (minimal 3 karakter).</div>
+          <div class="hint ok">Nama lengkap valid.</div>
+        </div>
+
+        <div class="field" id="field-email">
+          <label for="email">Email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" placeholder="nama@contoh.com">
+          <div class="hint err">Format email tidak sesuai, contoh: nama@contoh.com.</div>
+          <div class="hint ok">Format email sudah benar.</div>
+        </div>
+
+        <div class="field" id="field-password">
+          <label for="password">Password <span class="req">*</span></label>
+          <input type="password" id="password" name="password" placeholder="Minimal 8 karakter">
+          <div class="hint err">Password minimal 8 karakter.</div>
+          <div class="hint ok">Password memenuhi syarat.</div>
+        </div>
+
+        <div class="field" id="field-konfirmasi">
+          <label for="konfirmasi">Konfirmasi Password <span class="req">*</span></label>
+          <input type="password" id="konfirmasi" name="konfirmasi" placeholder="Ulangi password">
+          <div class="hint err">Konfirmasi password harus sama persis dengan password.</div>
+          <div class="hint ok">Konfirmasi password cocok.</div>
+        </div>
+
+        <div class="field" id="field-kelas">
+          <label for="kelas">Pilihan Kelas <span class="req">*</span></label>
+          <select id="kelas" name="kelas">
+            <option value="" selected disabled>Pilih kelasmu</option>
+                  <!-- KELAS X -->
+                  <option value="x-rpl-1">X RPL 1</option>
+                  <option value="x-rpl-2">X RPL 2</option>
+                  <option value="x-rpl-3">X RPL 3</option>
+                  <option value="x-rpl-4">X RPL 4</option>
+                  
+                  <option value="x-busana-1">X BUSANA 1</option>
+                  <option value="x-busana-2">X BUSANA 2</option>
+                  <option value="x-busana-3">X BUSANA 3</option>
+                  <option value="x-busana-4">X BUSANA 4</option>
+                  
+                  <option value="x-tkj-1">X TKJ 1</option>
+                  <option value="x-tkj-2">X TKJ 2</option>
+                  <option value="x-tkj-3">X TKJ 3</option>
+                  
+                  <option value="x-kuliner-1">X KULINER 1</option>
+                  <option value="x-kuliner-2">X KULINER 2</option>
+                  <option value="x-kuliner-3">X KULINER 3</option>
+                  
+                  <option value="x-tsm-1">X TSM 1</option>
+                  <option value="x-tsm-2">X TSM 2</option>
+                  <option value="x-tsm-3">X TSM 3</option>
+                  <option value="x-tsm-4">X TSM 4</option>
+                  
+                  <option value="x-tkr-1">X TKR 1</option>
+                  <option value="x-tkr-2">X TKR 2</option>
+                  <option value="x-tkr-3">X TKR 3</option>
+                  <option value="x-tkr-4">X TKR 4</option>
+                  
+                  
+                  <!-- KELAS XI -->
+                  
+                  <option value="xi-rpl-1">XI RPL 1</option>
+                  <option value="xi-rpl-2">XI RPL 2</option>
+                  <option value="xi-rpl-3">XI RPL 3</option>
+                  <option value="xi-rpl-4">XI RPL 4</option>
+                  
+                  <option value="xi-busana-1">XI BUSANA 1</option>
+                  <option value="xi-busana-2">XI BUSANA 2</option>
+                  <option value="xi-busana-3">XI BUSANA 3</option>
+                  <option value="xi-busana-4">XI BUSANA 4</option>
+                  
+                  <option value="xi-tkj-1">XI TKJ 1</option>
+                  <option value="xi-tkj-2">XI TKJ 2</option>
+                  <option value="xi-tkj-3">XI TKJ 3</option>
+                  
+                  <option value="xi-kuliner-1">XI KULINER 1</option>
+                  <option value="xi-kuliner-2">XI KULINER 2</option>
+                  <option value="xi-kuliner-3">XI KULINER 3</option>
+                 
+                  
+                  <option value="xi-tsm-1">XI TSM 1</option>
+                  <option value="xi-tsm-2">XI TSM 2</option>
+                  <option value="xi-tsm-3">XI TSM 3</option>
+                  <option value="xi-tsm-4">XI TSM 4</option>
+                  
+                  <option value="xi-tkr-1">XI TKR 1</option>
+                  <option value="xi-tkr-2">XI TKR 2</option>
+                  <option value="xi-tkr-3">XI TKR 3</option>
+                  <option value="xi-tkr-4">XI TKR 4</option>
+                  
+                  
+                  <!-- KELAS XII -->
+                  
+                  <option value="xii-rpl-1">XII RPL 1</option>
+                  <option value="xii-rpl-2">XII RPL 2</option>
+                  <option value="xii-rpl-3">XII RPL 3</option>
+                  <option value="xii-rpl-4">XII RPL 4</option>
+                  
+                  <option value="xii-busana-1">XII BUSANA 1</option>
+                  <option value="xii-busana-2">XII BUSANA 2</option>
+                  <option value="xii-busana-3">XII BUSANA 3</option>
+                  <option value="xii-busana-4">XII BUSANA 4</option>
+                  
+                  <option value="xii-tkj-1">XII TKJ 1</option>
+                  <option value="xii-tkj-2">XII TKJ 2</option>
+                  <option value="xii-tkj-3">XII TKJ 3</option>
+                  
+                  <option value="xii-kuliner-1">XII KULINER 1</option>
+                  <option value="xii-kuliner-2">XII KULINER 2</option>
+                  <option value="xii-kuliner-3">XII KULINER 3</option>
+                  
+                  
+                  <option value="xii-tsm-1">XII TSM 1</option>
+                  <option value="xii-tsm-2">XII TSM 2</option>
+                  <option value="xii-tsm-3">XII TSM 3</option>
+                  <option value="xii-tsm-4">XII TSM 4</option>
+                  
+                  <option value="xii-tkr-1">XII TKR 1</option>
+                  <option value="xii-tkr-2">XII TKR 2</option>
+                  <option value="xii-tkr-3">XII TKR 3</option>
+                  <option value="xii-tkr-4">XII TKR 4</option>
+          </select>
+          <div class="hint err">Silakan pilih kelasmu.</div>
+          <div class="hint ok">Kelas tersimpan.</div>
+        </div>
+
+        <div class="field" id="field-ekskul">
+          <label for="ekskul">Pilihan Ekstrakurikuler <span class="req">*</span></label>
+          <select id="ekskul" name="ekskul">
+            <option value="" selected disabled>Pilih salah satu ekstrakurikuler</option>
+            <option value="jurnalistik">Jurnalistik</option>
+              <option value="pramuka">Pramuka</option>
+              <option value="pmr">Palang Merah Remaja (PMR)</option>
+              <option value="paskibra">Paskibra</option>
+              <option value="basket">Basket</option>
+              <option value="futsal">Futsal</option>
+              <option value="rebana">Rebana</option>
+              <option value="silat">Pencak Silat</option>
+              <option value="seni-tari">Seni Tari</option>
+              <option value="drumband">Drumband</option>
+              <option value="bahasa-jepang">Bahasa Jepang</option>
+              <option value="self-riding">Self Riding</option>
+              <option value="voli">Voli</option>
+              <option value="paduan-suara">Paduan Suara</option>
+              <option value="rohis">Rohis</option>
+          </select>
+          <div class="hint err">Silakan pilih salah satu ekstrakurikuler.</div>
+          <div class="hint ok">Pilihan ekstrakurikuler tersimpan.</div>
+        </div>
+
+        <button type="submit" class="submit-btn">Kirim Pendaftaran</button>
+
+        <div class="success-box" id="successBox">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#1E8E6E"/><path d="M7 12.5l3 3 7-7" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Pendaftaran berhasil! Data kamu sudah tercatat, silakan cek email untuk info lebih lanjut.</span>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Chatbot: didudukkan di samping form, bukan menempel di pojok layar -->
+  <div class="chat-dock">
+    <button class="chat-toggle" id="chatToggle" aria-label="Buka chatbot bantuan">
+      <svg class="icon-chat" viewBox="0 0 24 24" fill="none"><path d="M4 5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9l-4.6 3.2A.6.6 0 0 1 3 18.7V6a1 1 0 0 1 1-1Z" fill="#fff"/><circle cx="8.5" cy="10.5" r="1.2" fill="#0E7C72"/><circle cx="12.5" cy="10.5" r="1.2" fill="#0E7C72"/><circle cx="16.5" cy="10.5" r="1.2" fill="#0E7C72"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#fff" stroke-width="2.3" stroke-linecap="round"/></svg>
+    </button>
+    <span class="chat-label">Butuh bantuan?</span>
+
+    <div class="chat-panel" id="chatPanel">
+      <div class="chat-head">
+        <span class="dot"></span>
+        <div>
+          <strong>Asisten Pendaftaran</strong>
+          <span>SMK Negri Tengaran</span>
+        </div>
+      </div>
+      <div class="chat-body" id="chatBody"></div>
+      <div class="chat-quick" id="chatQuick">
+        <button data-q="kelas">Pilihan kelas</button>
+        <button data-q="ekskul">Pilihan ekskul</button>
+        <button data-q="password">Syarat password</button>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Tulis pertanyaanmu...">
+        <button id="chatSend" aria-label="Kirim pesan">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l16-8-6 8 6 8-16-8Z" fill="#fff"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
